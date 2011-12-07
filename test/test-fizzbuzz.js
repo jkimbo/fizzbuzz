@@ -28,6 +28,8 @@ exports['random-inputs'] = function(test) {
             test.ok(false);
         }
     }
+    
+    // random number multiplied by 5
     for(var i = 1; i <= 10; i++) {
         var rand = Math.floor(Math.random()*10)*5;
         var output = fizzbuzz.check(rand);
@@ -37,6 +39,8 @@ exports['random-inputs'] = function(test) {
             test.ok(false);
         }
     }
+
+    // random number multiplied by 15
     for(var i = 1; i <= 10; i++) {
         var rand = Math.floor(Math.random()*10)*15;
         var output = fizzbuzz.check(rand);
@@ -46,5 +50,6 @@ exports['random-inputs'] = function(test) {
             test.ok(false);
         }
     }
+
     test.done()
 }
